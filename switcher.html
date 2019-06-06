@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="switcher.js"></script>
+</head>
+
+<script>
+    // 在窗体加载时，对开关组件进行初始化
+    window.onload = function() {
+        switcher.init("#mycanvas");
+        switcher.init("#mycanvas2");
+        switcher.init("#mycanvas3");
+    }
+</script>
+
+<body>
+    
+    <canvas id="mycanvas" width="40" height="20" on="#49c765" off="#979797" circle="white" status="on"></canvas>
+    <canvas id="mycanvas2" width="60" height="30" on="#49c765" off="#979797" circle="white" status="on"></canvas>
+    <canvas id="mycanvas3" width="80" height="40" on="#49c765" off="#979797" circle="white" status="on"></canvas>
+</body>
+</html>
